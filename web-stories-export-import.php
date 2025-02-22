@@ -2,11 +2,20 @@
 /**
  * Plugin Name: Web Stories Content Transfer (Exact Export/Import)
  * Description: Exports and imports post_content_filtered exactly as it is in the database.
- * Version: 1.1
- * Author: Your Name
+ * Version: 1.1.0
+ * Author: Ekwa Marketing
  */
 
 if (!defined('ABSPATH')) exit;
+
+require 'includes/plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/agskanchana/web-stories-export-import/',
+	__FILE__,
+	'web-stories-export-import'
+);
 
 /**
  * Export Web Stories post_content_filtered as CSV without escaping.
