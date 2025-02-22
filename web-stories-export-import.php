@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Web Stories Content Transfer (Exact Export/Import)
  * Description: Exports and imports post_content_filtered exactly as it is in the database.
- * Version: 1.1.0
+ * Version: 1.1.3
  * Author: Ekwa Marketing
  */
 
